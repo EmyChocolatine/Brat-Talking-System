@@ -11,9 +11,9 @@ class Settings:
     elevenlabs_api_key: str = os.getenv("ELEVENLABS_API_KEY", "")
     database_path: str = os.getenv("DATABASE_PATH", "data/bot.sqlite3")
     default_timeout_minutes: int = int(os.getenv("DEFAULT_TIMEOUT_MINUTES", "30"))
-    elevenlabs_model_id: str = os.getenv("ELEVENLABS_MODEL_ID", "eleven_v3")
+    elevenlabs_model_id: str = os.getenv("ELEVENLABS_MODEL_ID", "eleven_v4_turbo")
     elevenlabs_output_format: str = os.getenv("ELEVENLABS_OUTPUT_FORMAT", "mp3_44100_128")
-    max_text_length: int = int(os.getenv("MAX_TEXT_LENGTH", "2000"))
+    max_text_length: int = int(os.getenv("MAX_TEXT_LENGTH", "3000"))
     log_level: str = os.getenv("LOG_LEVEL", "INFO")
 
 
@@ -21,5 +21,5 @@ settings = Settings()
 
 elevenlabs_output_format: str = os.getenv(
     "ELEVENLABS_OUTPUT_FORMAT",
-    "opus_48000_96"
+    "mp3_44100_128""
 )
