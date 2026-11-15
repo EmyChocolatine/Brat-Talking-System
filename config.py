@@ -17,9 +17,4 @@ class Settings:
     log_level: str = os.getenv("LOG_LEVEL", "INFO")
 
 
-settings = Settings()
-
-elevenlabs_output_format: str = os.getenv(
-    "ELEVENLABS_OUTPUT_FORMAT",
-    "mp3_44100_128""
-)
+settings = Settings() 
